@@ -10,10 +10,13 @@ import { ProductReadModelSchematicsDataSource, ProductReadModelSchematicsItem } 
   styleUrls: ['./product-read-model-schematics.component.css']
 })
 export class ProductReadModelSchematicsComponent implements AfterViewInit, OnInit {
-  @ViewChild(MatPaginator) paginator: MatPaginator;
-  @ViewChild(MatSort) sort: MatSort;
-  @ViewChild(MatTable) table: MatTable<ProductReadModelSchematicsItem>;
-  dataSource: ProductReadModelSchematicsDataSource;
+  @ViewChild(MatPaginator)
+  paginator!: MatPaginator;
+  @ViewChild(MatSort)
+  sort!: MatSort;
+  @ViewChild(MatTable)
+  table!: MatTable<ProductReadModelSchematicsItem>;
+  dataSource!: ProductReadModelSchematicsDataSource;
 
   /** Columns displayed in the table. Columns IDs can be added, removed, or reordered. */
   displayedColumns = ['id', 'name'];

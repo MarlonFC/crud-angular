@@ -41,8 +41,8 @@ const EXAMPLE_DATA: ProductReadModelSchematicsItem[] = [
  */
 export class ProductReadModelSchematicsDataSource extends DataSource<ProductReadModelSchematicsItem> {
   data: ProductReadModelSchematicsItem[] = EXAMPLE_DATA;
-  paginator: MatPaginator;
-  sort: MatSort;
+  paginator!: MatPaginator;
+  sort!: MatSort;
 
   constructor() {
     super();
